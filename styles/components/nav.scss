@@ -1,0 +1,107 @@
+@import '../breakpoints.scss';
+
+.nav {
+  position: -webkit-fixed;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &.white {
+    background-color: white;
+
+    ul {
+      li {
+        a {
+          color: black;
+          &:hover {
+            color: rgba(255, 94, 0, 0.822);
+          }
+          &.call-us {
+            border: solid 4px rgba(255, 94, 0, 0.822);
+            border-radius: 35px;
+            background-clip: padding-box;
+            background-color: transparent;
+            -webkit-background-clip: padding-box;
+            img {
+              filter: invert(0);
+            }
+            &:hover {
+              background-color: rgba(255, 94, 0, 0.822);
+              color: white;
+              transition: all 0.5s;
+              img {
+                filter: invert(1);
+                transition: all 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .img-container {
+    justify-content: center;
+    align-items: center;
+    height: 106px;
+  }
+  justify-content: space-between;
+  .logo {
+    margin-left: 20px;
+    height: 90px;
+    &:hover {
+      cursor: pointer;
+    }
+    @media screen and(min-width:$lg){
+    height: 100px;
+      
+    }
+  }
+  ul {
+    display: none;
+
+  }
+  background-color: #111;
+  @media (min-width: $lg) {
+    ul {
+      display: flex;
+      list-style-type: none;
+      width: 55%;
+      justify-content: space-around;
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 800;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+        }
+        .call-us {
+          background-color: rgba(255, 94, 0, 0.822);
+          padding: 15px 25px;
+          border-radius: 30px;
+          display: flex;
+          font-size: 20px;
+          align-items: center;
+          &:hover {
+            color: #111;
+          }
+          img {
+            margin-right: 15px;
+            filter: invert(1);
+            height: 30px;
+          }
+        }
+        a:hover {
+          color: rgba(255, 94, 0, 0.822);
+        }
+      }
+    }
+  }
+  @media (min-width: $xl){
+ul{
+  width:40%
+}
+  }
+}

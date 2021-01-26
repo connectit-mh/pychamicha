@@ -1,0 +1,29 @@
+@import "shared";
+@import "components/nav.scss";
+@import "components/main-header.scss";
+@import "components/category.scss";
+@import "components/categories-list.scss";
+@import "components/food-list.scss";
+@import "components/food.scss";
+@import "components/about-us.scss";
+@import "components/news-list.scss";
+@import "components/news.scss";
+@import "components/contact.scss";
+@import "components/sidebar.scss";
+
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(https://pycha-micha.vercel.app/fonts/Poppins-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+* {
+  font-family: Poppins, serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+svg:hover {
+  fill: white;
+}
