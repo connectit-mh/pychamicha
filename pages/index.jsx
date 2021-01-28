@@ -12,7 +12,6 @@ import Sidebar from "../components/navbar/sidebar";
 
 
 export default function Index({ menu, aboutUs, contact, slogan,metaTags,news }) {
-  console.log(menu)
   return (
     <div id="App">
       <Head>
