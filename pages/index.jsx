@@ -23,7 +23,7 @@ export default function Index({ menu, aboutUs, contact, slogan,metaTags,news }) 
         <meta property="og:url" content={metaTags.url} />
         <meta property="og:description" content={metaTags.description} />
         <meta property="og:image" content={metaTags.image} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar />
       <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} />

@@ -1,0 +1,22 @@
+.blog {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    height: 30vh;
+    position: relative;
+    width: 100%;
+  }
+
+  &__main-text {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  &__text {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
