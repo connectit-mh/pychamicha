@@ -5,7 +5,7 @@ Disallow: /_next/static/
 `;
 
 class Sitemap extends React.Component {
-  public static async getInitialProps({ res }) {
+  static async getInitialProps({ res }) {
     res.setHeader('Content-Type', 'text/plain');
     res.write(getRobots());
     res.end();

@@ -19,7 +19,7 @@ const getSitemap = () => `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>`;
 
 class Sitemap extends React.Component {
-  public static async getInitialProps({ res }) {
+  static async getInitialProps({ res }) {
     res.setHeader("Content-Type", "text/xml");
     res.write(getSitemap());
     res.end();
