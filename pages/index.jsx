@@ -23,6 +23,7 @@ export default function Index({ menu, aboutUs, contact, slogan,metaTags,news }) 
         <meta property="og:url" content={metaTags.url} />
         <meta property="og:description" content={metaTags.description} />
         <meta property="og:image" content={metaTags.image} />
+        <meta name="google-site-verification" content="tfkjkWtYmiBjSORzD5GrK7igk-wmvf86Sic7QIKR6WQ" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar />
