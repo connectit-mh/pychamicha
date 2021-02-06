@@ -13,7 +13,7 @@ const defaultOptions = { scrollwheel: false };
 const RegularMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={8}
+      defaultZoom={17}
       defaultCenter={ defaultCenter }
       defaultOptions={ defaultOptions }
     >

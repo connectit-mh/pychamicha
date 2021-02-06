@@ -8,6 +8,7 @@ import { fetchAPI } from "../api/api";
 import NewsList from "../components/home/news/news-list";
 import Contact from "../components/home/contact/contact";
 import Sidebar from "../components/navbar/sidebar";
+import Footer from '../components/home/footer';
 
 
 
@@ -23,6 +24,7 @@ export default function Index({ menu, aboutUs, contact, slogan,metaTags,news }) 
         <meta property="og:url" content={metaTags.url} />
         <meta property="og:description" content={metaTags.description} />
         <meta property="og:image" content={metaTags.image} />
+        <meta name="author" content="Marek Hracki"></meta>
         <meta name="google-site-verification" content="tfkjkWtYmiBjSORzD5GrK7igk-wmvf86Sic7QIKR6WQ" />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -37,6 +39,7 @@ export default function Index({ menu, aboutUs, contact, slogan,metaTags,news }) 
         <NewsList newsList={news} />
       </div>
       <Contact contact={contact} />
+      <Footer/>
     </div>
   );
 }

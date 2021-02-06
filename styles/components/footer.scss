@@ -1,0 +1,35 @@
+@import "../breakpoints.scss";
+
+.footer-container {
+  padding: 20px;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+
+  @media screen and (min-width: $md) {
+    max-width: 60%;
+  padding: 40px;
+    
+
+  }
+  .socials {
+    justify-content: space-around;
+    align-items: center;
+  }
+  img {
+    height: 100px;
+    justify-content: center;
+  }
+  .author{
+      justify-content: center;
+      align-items: flex-end;
+      width:100%;
+      a{
+        margin-top:20px;
+        font-size: 18px;
+        color:black;
+        margin-left: 0.5ex;
+      }
+  
+  }
+}
