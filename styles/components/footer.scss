@@ -8,28 +8,57 @@
 
   @media screen and (min-width: $md) {
     max-width: 60%;
-  padding: 40px;
-    
-
+    padding: 40px;
   }
   .socials {
     justify-content: space-around;
     align-items: center;
+    #insta {
+      height: 100px;
+      width: 100px;
+      background-image: url("/images/social-svg/instagram.svg");
+      &:hover {
+        background-image: url("/images/social-svg/instagramcolor.svg");
+        transition: all 0.5s;
+      }
+    }
+    #face {
+      height: 100px;
+      width: 100px;
+      background-image: url("/images/social-svg/facebook.svg");
+      &:hover {
+        background-image: url("/images/social-svg/facebookcolor.svg");
+        transition: all 0.5s;
+      }
+    }
+    #call-us {
+      height: 100px;
+      width: 100px;
+      background-image: url("/images/social-svg/phonecall.svg");
+      &:hover {
+        background-image: url("/images/social-svg/phonecallcolor.svg");
+        transition: all 0.5s;
+      }
+    }
   }
   img {
     height: 100px;
     justify-content: center;
   }
-  .author{
-      justify-content: center;
-      align-items: flex-end;
-      width:100%;
-      a{
-        margin-top:20px;
-        font-size: 18px;
-        color:black;
-        margin-left: 0.5ex;
-      }
-  
+  .author {
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    @media screen and (min-width: $md) {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    a {
+      font-size: 1.2em;
+      color: black;
+      margin-left: 0.5ex;
+    }
   }
 }

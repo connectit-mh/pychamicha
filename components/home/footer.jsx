@@ -7,18 +7,18 @@ const Footer = ({}) => {
     <div className="footer-container">
       <div className="socials flex">
         <Link href="https://www.facebook.com/pages/category/Restaurant/Pycha-Micha-107978534326545/">
-          <a>
-            <img src={"/images/social-svg/facebook.svg"} alt="facebook" />
+          <a id="face" target="_blank">
+
           </a>
         </Link>
         <Link href="tel:+48-33-852-12-12">
-          <a>
-            <img src={"/images/social-svg/phonecall.svg"} alt="telefon" />
+          <a id="call-us">
+           
           </a>
         </Link>
         <Link href="https://www.instagram.com/restauracjapycha/">
-          <a>
-            <img src={"/images/social-svg/Instagram.svg"} alt="Instagram" />
+          <a id="insta" target="_blank">
+
           </a>
         </Link>
       </div>
